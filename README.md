@@ -32,6 +32,6 @@ included eslint config extended to react, and lint-staged for code checking.
 
 Performance auditing was done for launch_year 2020 which has images. slowness has been recorded because of the size of the images.
 
-![Ran for emulated desktop](images/performance/desktop/Image1.png?raw=true "Emulated Desktop")
+![Ran for emulated desktop](https://raw.githubusercontent.com/vikasmadan09/launch_spacex/master/images/performance/Desktop/Image1.PNG "Emulated Desktop")
 
-![Ran for emulated Mobile](images/performance/mobile/Image1.png?raw=true "Emulated Desktop")
+![Ran for emulated Mobile](https://raw.githubusercontent.com/vikasmadan09/launch_spacex/master/images/performance/Mobile/Image1.PNG "Emulated Desktop")
