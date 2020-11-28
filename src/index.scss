@@ -1,0 +1,55 @@
+@import '~bootstrap/scss/bootstrap.scss';
+
+$lightGray: #d3d3d3;
+$black: #000;
+$lightGreen: #99c773;
+$darkGreen: #58bb08;
+$darkBlue: #1d1d5f;
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.main-container {
+    background-color: $lightGray;
+}
+
+.custom-button {
+    color: $black;
+    background-color: $lightGreen;
+    &:focus {
+        color: $black;
+        background-color: $darkGreen;
+    }
+}
+
+.card-image{
+    max-height: 172px;
+    padding: 6px; 
+    background-color: $lightGray
+}
+
+hr{
+    margin-top: 0px;
+}
+
+.card-title{
+    color:$darkBlue
+}
+
+.loader {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+}
+
+.no-records{
+    text-align: center;
+    left: 50%;
+    display: block;
+    position: absolute;
+    top: 30%;
+    font-weight: bold;
+}
