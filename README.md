@@ -22,6 +22,7 @@ Haven't disabled redux-logger so as to verify the above.
 Since data change is happening based on the query , have included only '/' as a valid path.
 
 included eslint config extended to react, and lint-staged for code checking.
+**NOTE** : Moved all _devDependencies_ under _dependencies_ as the deployment to Heroku expects all downloadable packages to be under _dependencies_
 
 ### UI 
 
