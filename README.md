@@ -25,7 +25,8 @@ included eslint config extended to react, and lint-staged for code checking.
 
 ### UI 
 
-<img src="https://raw.githubusercontent.com/vikasmadan09/launch_spacex/master/images/Page.png?raw=true"/> 
+![UI Image](https://raw.githubusercontent.com/vikasmadan09/launch_spacex/master/images/Page.PNG "Desktop")
+
 
 ### Performance Auditing through lighthouse
 
