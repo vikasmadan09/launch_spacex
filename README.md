@@ -25,12 +25,12 @@ included eslint config extended to react, and lint-staged for code checking.
 
 ### UI 
 
-![UI Image](/images/Page.png "Desktop")
+![UI Image](/images/Page.png?raw=true "Desktop")
 
 ### Performance Auditing through lighthouse
 
 Performance auditing was done for launch_year 2020 which has images. slowness has been recorded because of the size of the images.
 
-![Ran for emulated desktop](/images/performance/desktop/Image1.png "Emulated Desktop")
+![Ran for emulated desktop](/images/performance/desktop/Image1.png?raw=true "Emulated Desktop")
 
-![Ran for emulated Mobile](/images/performance/mobile/Image1.png "Emulated Desktop")
+![Ran for emulated Mobile](/images/performance/mobile/Image1.png?raw=true "Emulated Desktop")
