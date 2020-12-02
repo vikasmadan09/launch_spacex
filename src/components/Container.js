@@ -11,10 +11,10 @@ const Container = ()=>{
         <div >
             <Compound fluid className="main-container" >
                 <Row className="pl-2">
-                    <h2><strong>SpaceX Launch Programs</strong></h2>
+                    <header><strong>SpaceX Launch Programs</strong></header>
                 </Row>
                 <Row className="pl-2">
-                    <Col md="2" style={{ backgroundColor: '#ffff' }}>
+                    <Col md="2">
                         <FilterSection />
                     </Col>
                     <Col md="10">

@@ -1,15 +1,26 @@
 @import '~bootstrap/scss/bootstrap.scss';
 
+$white: #ffff;
 $lightGray: #d3d3d3;
 $black: #000;
 $lightGreen: #99c773;
 $darkGreen: #58bb08;
 $darkBlue: #1d1d5f;
 
-body {
+html, body {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+    height: 100%;
+}
+
+#root{
+    min-height: 100%;
+    margin: 0 auto;
+}
+
+header {
+    font-size:32px;
 }
 
 .main-container {
@@ -52,4 +63,52 @@ hr{
     position: absolute;
     top: 30%;
     font-weight: bold;
+}
+
+.filter-section{
+    background-color: $white;
+    border-radius:5px
+}
+.filter-bar {
+    flex: 0 0 50%;
+    max-width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@media (max-width: 700px) {
+    header{
+        font-size: 28px;
+    }
+    .card-deck  {
+        min-width: 50.1%;  /* 1 Columns */
+    }
+    .filter-bar{
+        min-width: 50%;
+        flex: 0 0 50%;
+        justify-content: center;
+        display: flex;
+    }
+}
+
+@media (min-width: 701px) and (max-width:1023.98px) {
+    .col-md-2 {
+        flex: 0 0 33.33%;
+        max-width: 33.33%;
+    }
+    .col-md-10 {
+        flex: 0 0 66.66%;
+        max-width: 66.66%;
+    }
+    .card-deck  {
+        min-width: 54%;  /* 2 Columns */
+    }
+}
+
+@media (min-width: 1024px) and (max-width:1440px) {
+    .card-deck  {
+        min-width: 25%;  /* 4 Columns */
+        margin-left: 0px;
+        margin-right: 0px;
+    }
 }

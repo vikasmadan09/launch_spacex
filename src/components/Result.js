@@ -2,10 +2,13 @@ import React, { useEffect } from 'react';
 import { Card, CardImg, CardTitle, CardText, CardBody, Col, Row, Spinner } from 'reactstrap';
 import { useSelector, useDispatch } from 'react-redux';
 import { filteredResults } from '../actions/filteredResults';
+import { useSSR } from '../common/useSSR';
 
 const Result = ({ location }) => {
     const dispatch = useDispatch();
     const { loading, filterData, key } = useSelector((state) => state.data);
+
+    const isSsr = useSSR();
 
     useEffect(() => {
         //ensure api is called only if filter is applied, not during initial render
@@ -26,13 +29,13 @@ const Result = ({ location }) => {
                     filterData.map(({ links, mission_name, flight_number, mission_id,launch_year,launch_success, rocket }) => {
                         return (
                             <React.Fragment key={flight_number}>
-                                <Col sm='3'>
-                                <Card className="p-2">
+                                <Col sm='3'className="mb-2 card-deck">
+                                <Card className="p-2 h-100 m-auto">
                                     <CardImg
                                         top
                                         width="100%"
-                                        className="card-image"
-                                        src={links.flickr_images?.length > 0 ? links.flickr_images[0] : ''}
+                                        className="card-image w-100 h-100"
+                                        src={!isSsr && window.innerWidth < 700 ? links.mission_patch_small : links.mission_patch}
                                         alt={`${mission_name} #${flight_number}`}
                                     />
                                     <CardBody>
