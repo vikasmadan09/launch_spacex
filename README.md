@@ -34,12 +34,16 @@ included eslint config extended to react, and lint-staged for code checking.
 
 ### Tablet UI 
 
-![UI Image](https://raw.githubusercontent.com/vikasmadan09/launch_spacex/master/images/Tabler_iPad.PNG "Desktop")
+![UI Image](https://raw.githubusercontent.com/vikasmadan09/launch_spacex/master/images/Tablet_iPad.PNG "Desktop")
 
 ### Performance Auditing through lighthouse
 
-Performance auditing was done for launch_year 2020 which has images. slowness has been recorded because of the size of the images.
+**Slowness has been recorded because of the size of the images.**
+
+#### Desktop
 
 ![Ran for emulated desktop](https://raw.githubusercontent.com/vikasmadan09/launch_spacex/master/images/performance/Desktop/Image1.PNG "Emulated Desktop")
+
+#### Mobile
 
 ![Ran for emulated Mobile](https://raw.githubusercontent.com/vikasmadan09/launch_spacex/master/images/performance/Mobile/Image1.PNG "Emulated Desktop")
