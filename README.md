@@ -7,7 +7,8 @@ Stack used:
 4. redux-thunk
 5. redux-logger
 6. reactstrap
-7. scss
+7. bootstrap
+8. @media query to handle different screen widths
 
 on _server.js_ file (SSR), API call is handled, if the request URL matches '/': make a call to BASE_URL (https://api.spacexdata.com/v3/launches?limit=100), if there are any query params, then honour them.<br/> With this, which call needs to be done is decided, and corresponding Promise will be assigned to a variable named 'promise'. Wait for the promise to resolve, once the promise is resolved, pass on the resolved data to the redux store as _pre-loaded_ data. So now, the data will be available even during server side rendering and the html will be served. The browser will then pick and runs the JS; and styling will be applied. 
 
